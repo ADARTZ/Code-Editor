@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <title>AD's Code Editor</title>
+</head>
+<body>
+    
+    
+    <section class="container">
+        <h1>Code Editor <i class="ri-code-box-fill"></i></h1>
+
+        <div class="editor">
+            <div class="left">
+                <label><i class="ri-html5-line"></i></i>HTML</label>
+                <textarea onkeyup="run()" spellcheck="false" id="html-code"></textarea>
+
+                <label><i class="ri-css3-line"></i>CSS</label>
+                <textarea onkeyup="run()"  spellcheck="false" id="css-code"></textarea>
+
+                <label><i class="ri-javascript-line"></i>JavaScript</label>
+                <textarea onkeyup="run()"  spellcheck="false" id="js-code"></textarea>
+            </div>
+
+            <div class="right">
+                <label><i class="ri-play-line"></i>Output</label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
